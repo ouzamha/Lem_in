@@ -18,3 +18,4 @@ Create the program lem-in.
 lem-in will read the map (describing the ants and the colony) from the sdtin.
 
 Upon successfully finding the shortest path, lem-in will display the parsed input, and each ant's move from room to room.
+![lemin](https://user-images.githubusercontent.com/58828332/107134618-04fe0f80-68f4-11eb-94ae-99a160fdd76a.png)
