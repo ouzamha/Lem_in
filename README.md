@@ -19,3 +19,12 @@ lem-in will read the map (describing the ants and the colony) from the sdtin.
 
 Upon successfully finding the shortest path, lem-in will display the parsed input, and each ant's move from room to room.
 ![lemin](https://user-images.githubusercontent.com/58828332/107134618-04fe0f80-68f4-11eb-94ae-99a160fdd76a.png)
+
+# Approach
+The map was similar to an undirected graph with unit vertex capacities. First i created the equivalent directed graph with unit edge capacities then starting from 1 i continued to augment the flow and count the score (number of lines to get all the ants from start to end) until i found an optimal solution.
+I used [The Ford–Fulkerson method](https://en.m.wikipedia.org/wiki/Ford%E2%80%93Fulkerson_algorithm) for finding augmenting paths and i implemented it using [BFS](https://en.m.wikipedia.org/wiki/Breadth-first_search).
+
+# Usage
+Run ``make`` 
+
+``$>./lem-in < map``
